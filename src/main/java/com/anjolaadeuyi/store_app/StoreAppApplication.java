@@ -10,8 +10,10 @@ public class StoreAppApplication {
 
 //		SpringApplication.run(StoreAppApplication.class, args);
 
-		var orderService = new OrderService(new StripePaymentService());
-		orderService.placeOrder();
-	}
+		var stripeOrderService = new OrderService(new StripePaymentService());
+		stripeOrderService.placeOrder();
 
+		var paypalOrderService = new OrderService(new PayPalPaymentService());
+		paypalOrderService.placeOrder();
+	}
 }
