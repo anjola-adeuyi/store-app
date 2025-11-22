@@ -20,5 +20,8 @@ public class StoreAppApplication {
 //		paypalOrderService.placeOrder();
 //
 //		paypalOrderService.setPaymentService(new PayPalPaymentService());
+
+		var manager = context.getBean(NotificationManager.class);
+		manager.sendNotification("testing notification...");
 	}
 }
