@@ -22,6 +22,10 @@ public class StoreAppApplication {
 //		paypalOrderService.setPaymentService(new PayPalPaymentService());
 
 		var manager = context.getBean(NotificationManager.class);
-		manager.sendNotification("testing notification...");
+		manager.sendNotification("testing notification...", "email@gmail.com");
+
+		var userService = context.getBean(UserService.class);
+		userService.registerUser(new User(1L, "email@gmail.com", "123456", "John"));
+		userService.registerUser(new User(1L, "email2@gmail.com", "123456", "John"));
 	}
 }

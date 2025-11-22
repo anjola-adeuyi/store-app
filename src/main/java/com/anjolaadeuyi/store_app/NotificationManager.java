@@ -13,7 +13,7 @@ public class NotificationManager {
         this.notificationService = notificationService;
     }
 
-    public void sendNotification(String message){
-        this.notificationService.send(message);
+    public void sendNotification(String message, String recipientEmail){
+        this.notificationService.send(message, recipientEmail);
     }
 }
