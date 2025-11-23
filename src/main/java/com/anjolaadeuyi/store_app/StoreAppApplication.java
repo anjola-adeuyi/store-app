@@ -4,6 +4,7 @@ import com.anjolaadeuyi.store_app.common.NotificationManager;
 import com.anjolaadeuyi.store_app.common.OrderService;
 //import com.anjolaadeuyi.store_app.common.User;
 import com.anjolaadeuyi.store_app.common.UserService;
+import com.anjolaadeuyi.store_app.entities.Address;
 import com.anjolaadeuyi.store_app.entities.User;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,8 +15,14 @@ public class StoreAppApplication {
 
 	public static void main(String[] args) {
 
-        var user = User.builder().name("John").email("").password("").build();
+        var user = User.builder().name("John").email("email").password("password").build();
         System.out.println(user.getName());
+
+        var address = Address.builder().street("street").city("city").state("state").zip("zip").state("state").build();
+        System.out.println(address.getStreet());
+
+        user.addAddress(address);
+        System.out.println(user);
 
 //		ApplicationContext context = SpringApplication.run(StoreAppApplication.class, args);
 //		var orderService = context.getBean(OrderService.class);
