@@ -1,6 +1,4 @@
-package com.anjolaadeuyi.store_app;
-
-import org.springframework.stereotype.Service;
+package com.anjolaadeuyi.store_app.common;
 
 //@Service("paypal")
 public class PayPalPaymentService implements PaymentService {

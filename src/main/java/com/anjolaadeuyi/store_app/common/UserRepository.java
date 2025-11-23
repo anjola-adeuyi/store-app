@@ -1,4 +1,4 @@
-package com.anjolaadeuyi.store_app;
+package com.anjolaadeuyi.store_app.common;
 
 public interface UserRepository {
     void save(User user);

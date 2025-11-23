@@ -1,6 +1,5 @@
-package com.anjolaadeuyi.store_app;
+package com.anjolaadeuyi.store_app.common;
 
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service("sms")

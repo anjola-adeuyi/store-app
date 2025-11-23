@@ -1,5 +1,9 @@
 package com.anjolaadeuyi.store_app;
 
+import com.anjolaadeuyi.store_app.common.NotificationManager;
+import com.anjolaadeuyi.store_app.common.OrderService;
+import com.anjolaadeuyi.store_app.common.User;
+import com.anjolaadeuyi.store_app.common.UserService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;

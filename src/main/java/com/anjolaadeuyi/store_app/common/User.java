@@ -1,4 +1,4 @@
-package com.anjolaadeuyi.store_app;
+package com.anjolaadeuyi.store_app.common;
 
 public class User {
     private Long id;

@@ -1,4 +1,4 @@
-package com.anjolaadeuyi.store_app;
+package com.anjolaadeuyi.store_app.common;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

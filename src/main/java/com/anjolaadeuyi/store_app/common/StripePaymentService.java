@@ -1,8 +1,6 @@
-package com.anjolaadeuyi.store_app;
+package com.anjolaadeuyi.store_app.common;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Primary;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
